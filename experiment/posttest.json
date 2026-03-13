@@ -2,38 +2,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following operations is considered a DDL (Data Definition Language) operation that should be audited to prevent unauthorized schema changes?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "SELECT",
+        "b": "INSERT",
+        "c": "DROP",
+        "d": "UPDATE"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "SELECT is a DML operation used to retrieve data.",
+        "b": "INSERT is a DML operation used to add data.",
+        "c": "Correct. DROP is a DDL operation that can remove a table or database entirely.",
+        "d": "UPDATE is a DML operation used to modify existing data."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the context of database security, what does Fine-Grained Auditing (FGA) allow administrators to do?",
+      "answers": {
+        "a": "It allows auditing of specific DML operations based on precise conditions, such as the specific columns accessed or time of day.",
+        "b": "It only tracks physical hardware access to the database servers.",
+        "c": "It automatically blocks all user access during non-business hours.",
+        "d": "It provides a generalized summary of database logins once a month."
+      },
+      "explanations": {
+        "a": "Correct. FGA is distinct from standard auditing because it provides highly granular conditional tracking.",
+        "b": "FGA audits database activity, not physical hardware access.",
+        "c": "FGA is an auditing mechanism, not an access blocking mechanism by itself.",
+        "d": "Standard auditing can do generalized summaries; FGA is specifically for granular detail."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is it crucial to log failed database operations (e.g., a user attempting an unauthorized UPDATE) in an audit trail?",
+      "answers": {
+        "a": "To calculate the error rate for software debugging purposes only.",
+        "b": "Failed operations take up less storage space so they are preferred for logging.",
+        "c": "Tracking failed attempts helps identify potential intrusion attempts, privilege escalation, or malicious insiders testing boundaries.",
+        "d": "Failed operations automatically trigger a system reboot to clear the error state."
+      },
+      "explanations": {
+        "a": "While helpful for debugging, the primary security purpose is threat detection.",
+        "b": "Log size is not the primary reason for tracking failed events.",
+        "c": "Correct. Repeated failed attempts can indicate an ongoing attack or unauthorized probing.",
+        "d": "Databases do not reboot on failed queries; they return an error code."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }

@@ -1,1 +1,4 @@
-### Link your references in here
+
+1.  **NIST Special Publication 800-53 (Revision 5):** *Security and Privacy Controls for Information Systems and Organizations*. Details the Audit and Accountability (AU) control family, which provides guidelines for auditing events, content of audit records, and audit review.
+2.  **Oracle Database Security Guide:** *Auditing Database Activity*. Comprehensive documentation on implementing both standard and Fine-Grained Auditing (FGA), including tracking Data Definition Language (DDL) and Data Manipulation Language (DML) statements.
+3.  **PostgreSQL Documentation:** *Audit Logs and `pgAudit` Extension*. Guidance on native auditing mechanisms and the PostgreSQL Audit Extension (`pgAudit`) for providing detailed session and object audit logging via standard logging facility.
