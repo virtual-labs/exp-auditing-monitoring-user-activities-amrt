@@ -1,0 +1,7 @@
+
+1.  **NIST Special Publication 800-53 (Revision 5):** *Security and Privacy Controls for Information Systems and Organizations*. Details the Audit and Accountability (AU) control family, which provides guidelines for auditing events, content of audit records, and audit review.
+2.  **Oracle Database Security Guide:** *Auditing Database Activity*. Comprehensive documentation on implementing both standard and Fine-Grained Auditing (FGA), including tracking Data Definition Language (DDL) and Data Manipulation Language (DML) statements.
+3.  **PostgreSQL Documentation:** *Audit Logs and `pgAudit` Extension*. Guidance on native auditing mechanisms and the PostgreSQL Audit Extension (`pgAudit`) for providing detailed session and object audit logging via standard logging facility.
+4.  **Microsoft SQL Server Documentation**: *SQL Server Audit (Database Engine)*. Comprehensive guide on creating server audits and database audit specifications to track and log events that occur on the database engine.
+5.  **Silberschatz, A., Korth, H. F., & Sudarshan, S. (2019):** *Database System Concepts (7th ed.)*. **Chapter 26: Security**. Discusses database security, including authentication, authorization, and auditing mechanisms to ensure data integrity and confidentiality.
+6.  **Ramakrishnan, R., & Gehrke, J. (2003):** *Database Management Systems (3rd ed.)*. **Chapter 21: Security and Authorization**. Covers access control, security policies, and the role of auditing in detecting and deterring unauthorized activities.

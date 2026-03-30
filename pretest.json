@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary objective of implementing database auditing?",
+      "answers": {
+        "a": "To monitor and record user activities, ensuring accountability and detecting unauthorized access.",
+        "b": "To optimize database queries for faster execution times.",
+        "c": "To automatically generate entity-relationship diagrams from existing schemas.",
+        "d": "To encrypt all data at rest within the database files."
+      },
+      "explanations": {
+        "a": "Correct. Auditing focuses on activity tracking, compliance, and security.",
+        "b": "Auditing generally adds overhead; it does not optimize queries.",
+        "c": "Auditing does not generate structural diagrams.",
+        "d": "Encryption is a separate security control from auditing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In database terminology, how do Data Definition Language (DDL) operations differ from Data Manipulation Language (DML) operations in the context of auditing?",
+      "answers": {
+        "a": "DDL operations retrieve data for reporting, while DML operations define user roles and permissions.",
+        "b": "DDL operations deal with network configurations, while DML operations manage storage allocation.",
+        "c": "DDL operations modify the structural schema of the database, whereas DML operations affect the actual data stored within the tables.",
+        "d": "DDL operations are used exclusively by end-users, while DML operations are reserved for database administrators."
+      },
+      "explanations": {
+        "a": "SELECT is DML, and defining roles is DCL (Data Control Language).",
+        "b": "Neither DDL nor DML deals primarily with network or storage hardware.",
+        "c": "Correct. DDL (CREATE, ALTER, DROP) changes structure, while DML (INSERT, UPDATE, DELETE) changes data.",
+        "d": "End-users typically use DML, not DDL."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the main distinction between Standard Auditing and Fine-Grained Auditing (FGA)?",
+      "answers": {
+        "a": "Standard Auditing only tracks DML operations, while FGA tracks only DDL operations.",
+        "b": "Standard Auditing tracks baseline activities like user logons, whereas FGA allows for granular, conditional tracking based on factors like time of day or specific columns accessed.",
+        "c": "Standard Auditing runs continuously, but FGA must be manually triggered before every SQL query.",
+        "d": "Standard Auditing is a hardware-level feature, while FGA is implemented purely at the network firewall layer."
+      },
+      "explanations": {
+        "a": "Standard auditing often tracks DDL, while FGA focuses on granular DML tracking.",
+        "b": "Correct. FGA offers highly specific, rule-based auditing conditions.",
+        "c": "Both forms of auditing run automatically once configured.",
+        "d": "Both are software-level features within the Database Management System (DBMS)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following describes the 'Status' component typically found in a comprehensive database audit trail?",
+      "answers": {
+        "a": "The current geographic location of the specific database server.",
+        "b": "Whether the executed operation succeeded or failed due to permission errors.",
+        "c": "The amount of CPU usage consumed by the database engine at that exact moment.",
+        "d": "The total number of rows currently stored in the entire database."
+      },
+      "explanations": {
+        "a": "Location is part of the 'Where' context, not the operation's outcome status.",
+        "b": "Correct. Tracking failures ensures administrators can detect unauthorized attempts.",
+        "c": "CPU usage is a performance monitoring metric, not an audit log status.",
+        "d": "Row count is a metadata/storage metric."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why do regulatory frameworks like GDPR, HIPAA, and SOX mandate the implementation of database audit trails?",
+      "answers": {
+        "a": "To guarantee that all database systems are physically hosted in multiple, redundant geographic regions.",
+        "b": "To ensure that user passwords meet a minimum length and complexity threshold.",
+        "c": "To ensure that a vendor's latest proprietary database engine updates are automatically applied.",
+        "d": "To provide evidence that sensitive data access is monitored and robust controls are in place to prevent unauthorized modifications."
+      },
+      "explanations": {
+        "a": "This is a high-availability/disaster recovery requirement, not auditing.",
+        "b": "Password complexity is an identity and access management (IAM) control.",
+        "c": "Patch management is unrelated to auditing.",
+        "d": "Correct. Auditing provides the necessary historical evidence of compliance."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    }
+  ]
+}
