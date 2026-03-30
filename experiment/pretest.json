@@ -4,18 +4,18 @@
     {
       "question": "What is the primary objective of implementing database auditing?",
       "answers": {
-        "a": "To optimize database queries for faster execution times.",
-        "b": "To monitor and record user activities, ensuring accountability and detecting unauthorized access.",
+        "a": "To monitor and record user activities, ensuring accountability and detecting unauthorized access.",
+        "b": "To optimize database queries for faster execution times.",
         "c": "To automatically generate entity-relationship diagrams from existing schemas.",
         "d": "To encrypt all data at rest within the database files."
       },
       "explanations": {
-        "a": "Auditing generally adds overhead; it does not optimize queries.",
-        "b": "Correct. Auditing focuses on activity tracking, compliance, and security.",
+        "a": "Correct. Auditing focuses on activity tracking, compliance, and security.",
+        "b": "Auditing generally adds overhead; it does not optimize queries.",
         "c": "Auditing does not generate structural diagrams.",
         "d": "Encryption is a separate security control from auditing."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
@@ -74,16 +74,16 @@
       "answers": {
         "a": "To guarantee that all database systems are physically hosted in multiple, redundant geographic regions.",
         "b": "To ensure that user passwords meet a minimum length and complexity threshold.",
-        "c": "To provide evidence that sensitive data access is monitored and robust controls are in place to prevent unauthorized modifications.",
-        "d": "To ensure that a vendor's latest proprietary database engine updates are automatically applied."
+        "c": "To ensure that a vendor's latest proprietary database engine updates are automatically applied.",
+        "d": "To provide evidence that sensitive data access is monitored and robust controls are in place to prevent unauthorized modifications."
       },
       "explanations": {
         "a": "This is a high-availability/disaster recovery requirement, not auditing.",
         "b": "Password complexity is an identity and access management (IAM) control.",
-        "c": "Correct. Auditing provides the necessary historical evidence of compliance.",
-        "d": "Patch management is unrelated to auditing."
+        "c": "Patch management is unrelated to auditing.",
+        "d": "Correct. Auditing provides the necessary historical evidence of compliance."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "intermediate"
     }
   ]
